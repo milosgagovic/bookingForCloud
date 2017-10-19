@@ -1,0 +1,88 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+#center {
+	 position: absolute;
+	 top: 40%;
+	 left: 50%;
+  margin: -150px 0 0 -150px;
+}
+.mainTitle{
+   text-align: center
+}
+		footer {
+   background-color: #008080;
+}
+        
+.example-icon {
+  flex: 0.05 1 auto;
+  margin-right: 100px;
+}
+.divlog{
+    margin-right: 50px;
+}
+.divreg{
+    margin-right: 10px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+.title{
+    text-align: center;
+}
+
+.example-card {
+  
+  max-width: 60%;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.example-header-image {
+  background-image: url("assets/vila1.jpg");
+  background-size: cover;
+}
+
+.done {
+  position: fixed;
+  top: 150px;
+  left: 20px;
+  color: white;
+}
+.addDialog{
+  max-width: 50%;
+}
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
+}
+
+.acc-dialog {
+  
+  max-width: 90%;
+  margin: 1em auto;
+  text-align: center;
+}
+.search {
+  position: fixed;
+  top: 220px;
+  left: 20px;
+  color: white;
+}
+
+.searchImage {
+  background-image: url("assets/Search.png");
+  background-size: cover;
+  margin: -6px -5px;
+}
+
+.pagination{
+  margin: 2em auto;
+  text-align: center;
+}
