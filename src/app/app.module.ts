@@ -142,7 +142,7 @@ const Routes=[
     RouterModule.forRoot(Routes),
     NguiDatetimePickerModule,
     MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule,MaterialModule,MdNativeDateModule,MdSnackBarModule,
-    BrowserAnimationsModule,NgxPaginationModule,
+    BrowserAnimationsModule,NgxPaginationModule,FileUploader,
     //prilikom import-a mape prosleđujemo Google API key koji dobijamo preko google konzole
     AgmCoreModule.forRoot({apiKey: 'AIzaSyAtvp71DTpNaEw59EcmxvFMQOKRyRUiArg'})
    
