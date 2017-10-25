@@ -16,7 +16,7 @@ import {Manager} from "./manager.model"
 })
 export class ManagersComponent implements OnInit {
 
-  private managers:Array<Manager>;
+  public managers:Array<Manager>;
 
   constructor(private httpUsersService:HttpUsersService,
               private snackBar:MdSnackBar) { }

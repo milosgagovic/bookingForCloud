@@ -13,8 +13,8 @@ import {MdSnackBar} from "@angular/material";
 export class RoomReservationComponent implements OnInit {
 
 
-  private roomReservations:Array<RoomReservation>;
-  private editFlag;
+  public roomReservations:Array<RoomReservation>;
+  public editFlag;
   roomreservation:any;
 
   constructor(private httpRoomResService:HttpRoomReservationService,

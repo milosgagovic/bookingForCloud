@@ -21,7 +21,7 @@ export class RegionAddComponent implements OnInit {
 
   nRegion:any={};
   public contries: Array<Country>;
-  private postRegion:Region;
+  public postRegion:Region;
 
   constructor(private httpCountryService:HttpCountryService,
               private httpRegionService:HttpRegionService,

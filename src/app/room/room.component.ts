@@ -15,10 +15,10 @@ import {MdSnackBar} from "@angular/material";
 })
 export class RoomComponent implements OnInit {
   
-  private rooms:Array<Room>;
-  private editFlag;
+  public rooms:Array<Room>;
+  public editFlag;
   room:any;
-  private accomodations:Array<Accommodation>;
+  public accomodations:Array<Accommodation>;
 
   constructor(private httpRoomService:HttpRoomService,
               private snackBar:MdSnackBar) {

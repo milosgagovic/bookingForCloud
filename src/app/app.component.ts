@@ -19,10 +19,10 @@ export class AppComponent {
 
   username: string;
   isLoggedIn:boolean;
-  private role:string;
-  private adminRole:boolean;
-  private managerRole:boolean;
-  private appUser:boolean;
+  public role:string;
+  public adminRole:boolean;
+  public managerRole:boolean;
+  public appUser:boolean;
   public static adminR:boolean;
   public static managerR: boolean;
   zone: NgZone;

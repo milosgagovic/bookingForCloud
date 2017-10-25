@@ -9,10 +9,10 @@ declare var $: any;
 @Injectable()
 export class NotificationService {
     // Declare the variables  
-    private proxy: any;
-    private proxyName: string = 'notifications';
-    private connection: any;
-private token:string;
+    public proxy: any;
+    public proxyName: string = 'notifications';
+    public connection: any;
+public token:string;
     // create the Event Emitter  
     public adminNotReceived: EventEmitter<Array<any>>;
     public managerNotRecieved: EventEmitter<Array<any>>;

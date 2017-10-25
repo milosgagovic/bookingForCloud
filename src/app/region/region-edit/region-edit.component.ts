@@ -20,7 +20,7 @@ import {MdSnackBar} from "@angular/material";
 export class RegionEditComponent implements OnInit {
 
   @Input() eRegion:Region;
-  private regionForEdit:Region;
+  public regionForEdit:Region;
   public countries: Array<Country>;
   @Output() notifyParent: EventEmitter<any> = new EventEmitter();
 

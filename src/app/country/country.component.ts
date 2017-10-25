@@ -13,10 +13,10 @@ import {MdSnackBar} from "@angular/material"
 })
 export class CountryComponent implements OnInit {
   
-  private countries:Array<Country>;
-  private editFlag:boolean;
-  private adminRole:boolean;
-  private role:string;
+  public countries:Array<Country>;
+  public editFlag:boolean;
+  public adminRole:boolean;
+  public role:string;
   country:any;
 
   constructor(private httpCountryService:HttpCountryService,

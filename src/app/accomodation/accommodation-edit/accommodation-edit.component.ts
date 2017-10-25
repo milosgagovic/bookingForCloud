@@ -15,7 +15,7 @@ import {MdDialog, MdDialogRef, MdDialogConfig,MdSnackBar} from '@angular/materia
 import{MapModel} from "app/map/map.model";
 import {MapComponent} from "app/map/map.component"
 import {AppComponent} from "app/app.component";
-import {ImageuploadComponent} from "app/imageupload/imageupload.component"
+//import {ImageuploadComponent} from "app/imageupload/imageupload.component"
 
 @Component({
   selector: 'app-accommodation-edit',
@@ -25,13 +25,13 @@ import {ImageuploadComponent} from "app/imageupload/imageupload.component"
 })
 export class AccommodationEditComponent implements OnInit {
 
-  private accommodationForEdit:Accommodation;
+  public accommodationForEdit:Accommodation;
   public places: Array<Place>;
   public accommodationTypes:Array<AccomodationType>;
   public eAccommodation : Accommodation;
   mapInfo:MapModel;
-  private role:string;
-  private adminRole:boolean;
+  public role:string;
+  public adminRole:boolean;
 
   constructor(private httpPlaceService:HttpPlaceService,
               private httpAccommodationService:HttpAccommodationService,
@@ -73,8 +73,8 @@ export class AccommodationEditComponent implements OnInit {
     config.height='700px';
     config.width='700px';
 
-    let dialogRef = this.dialog.open(ImageuploadComponent,config);
-    dialogRef.componentInstance.accommodation=this.eAccommodation;
+    //let dialogRef = this.dialog.open(ImageuploadComponent,config);
+    //dialogRef.componentInstance.accommodation=this.eAccommodation;
   }
 
   openMapChangeLocation(){

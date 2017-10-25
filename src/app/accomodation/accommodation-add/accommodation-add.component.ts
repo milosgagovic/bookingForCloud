@@ -14,7 +14,7 @@ import {Router, ActivatedRoute} from '@angular/router';
 import {MdDialog, MdDialogRef,MdDialogConfig,MdSnackBar} from '@angular/material';
 import{MapModel} from "app/map/map.model";
 import {MapComponent} from "app/map/map.component"
-import {ImageuploadComponent} from "app/imageupload/imageupload.component"
+//import {ImageuploadComponent} from "app/imageupload/imageupload.component"
 import {Manager} from "app/managers/manager.model"
 
 @Component({
@@ -29,7 +29,7 @@ export class AccommodationAddComponent implements OnInit {
   userManager:Manager;
   public accommodationTypes: Array<AccomodationType>;
   public places:Array<Place>;
-  private postAccommodation:Accommodation;
+  public postAccommodation:Accommodation;
   mapInfo:MapModel;
 
   constructor(private httpAccommodationService:HttpAccommodationService,
@@ -58,8 +58,8 @@ export class AccommodationAddComponent implements OnInit {
     config.height='700px';
     config.width='700px';
 
-    let dialogRef = this.dialog.open(ImageuploadComponent,config);
-    dialogRef.componentInstance.accommodation=this.nAccommodation;
+   // let dialogRef = this.dialog.open(ImageuploadComponent,config);
+   // dialogRef.componentInstance.accommodation=this.nAccommodation;
   }
 
   openMapAdd(){

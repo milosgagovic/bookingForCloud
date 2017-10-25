@@ -1,6 +1,6 @@
 <div class="addDialog">
   <h1 md-dialog-title>Search for Accommodation</h1>
-  <form type="form" #f="ngForm" (ngSubmit)="f.form.valid && applyFilter(f.value,f)"  novalidate>
+  <form type="form" #f="ngForm" (ngSubmit)="f.form.valid && applyFilter()"  novalidate>
       <div>
         <section class="example-section">
              <md-checkbox class="example-margin" [(ngModel)]="checkedPlace" name= "Place_cb"></md-checkbox>

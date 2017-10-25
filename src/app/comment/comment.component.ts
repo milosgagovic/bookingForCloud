@@ -14,8 +14,8 @@ import {MdSnackBar} from "@angular/material"
 export class CommentComponent implements OnInit {
 
 
-  private comments:Array<Comment>;
-  private editFlag;
+  public comments:Array<Comment>;
+  public editFlag;
   comment:any;
 
 constructor(private httpCommentService:HttpCommentService,

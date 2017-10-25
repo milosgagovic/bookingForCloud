@@ -25,21 +25,21 @@ import {RoomAddComponent} from "app/room/room-add/room-add.component"
 })
 export class AccomodationComponent implements OnInit {
 
-  private accommodations:Array<Accommodation>;
+  public accommodations:Array<Accommodation>;
   accommodation:Accommodation;
-  private editFlag;
+  public editFlag;
   filtredAcc: Array<Accommodation>;
   mapInfo:MapModel;
   public imageUrl:string;
   p: number = 1;
   public count : number;
-  private userUndefined:boolean;
-  private adminRole:boolean;
-  private managerRole:boolean;
-  private managerBanned:boolean;
-  private userManager:Manager;
-  private appUser:boolean;
-  private role:string;
+  public userUndefined:boolean;
+  public adminRole:boolean;
+  public managerRole:boolean;
+  public managerBanned:boolean;
+  public userManager:Manager;
+  public appUser:boolean;
+  public role:string;
 
   constructor(private httpAccommodationService:HttpAccommodationService,
               public dialog:MdDialog,

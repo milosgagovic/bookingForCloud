@@ -15,10 +15,10 @@ import {MdSnackBar} from "@angular/material"
 })
 export class AccomodationtypeComponent implements OnInit {
 
-  private accomodationTypes:Array<AccomodationType>;
-  private editFlag;
-  private adminRole:boolean;
-  private role:string;
+  public accomodationTypes:Array<AccomodationType>;
+  public editFlag;
+  public adminRole:boolean;
+  public role:string;
   accomodationType:any;
 
   constructor(private httpAccomodationTypeService:HttpAccomodationTypeService,

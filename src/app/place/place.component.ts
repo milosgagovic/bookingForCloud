@@ -14,10 +14,10 @@ import {MdSnackBar} from "@angular/material"
 })
 export class PlaceComponent implements OnInit {
 
-  private places:Array<Place>;
-  private editFlag;
-  private adminRole:boolean;
-  private role:string;
+  public places:Array<Place>;
+  public editFlag;
+  public adminRole:boolean;
+  public role:string;
   place:any;
 
   constructor(private httpPlaceService:HttpPlaceService,

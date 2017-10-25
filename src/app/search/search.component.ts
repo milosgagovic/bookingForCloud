@@ -31,12 +31,12 @@ import {FilterService} from "app/search/search.service";
 })
 export class SearchComponent implements OnInit {
   public nSearch : SearchModel; 
-  private accommodations:Array<Accommodation>;
-  private accommodationsTypes:Array<AccomodationType>;
-  private rooms :Array<Room>;
-  private places : Array<Place>;
-  private regions : Array<Region>;
-  private countries : Array<Country>;
+  public accommodations:Array<Accommodation>;
+  public accommodationsTypes:Array<AccomodationType>;
+  public rooms :Array<Room>;
+  public places : Array<Place>;
+  public regions : Array<Region>;
+  public countries : Array<Country>;
   @Output() notify: EventEmitter<any> = new EventEmitter<any>();
   checkedPlace = false;
   checkedBedCount = false;

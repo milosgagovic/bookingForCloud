@@ -14,11 +14,11 @@ import {MdSnackBar} from "@angular/material";
 })
 export class RegionComponent implements OnInit {
 
-  private regions:Array<Region>;
-  private editFlag;
+  public regions:Array<Region>;
+  public editFlag;
   region:any;
-  private adminRole:boolean;
-  private role:string;
+  public adminRole:boolean;
+  public role:string;
 
   constructor(private httpRegionService:HttpRegionService,
               private snackBar:MdSnackBar) { }
