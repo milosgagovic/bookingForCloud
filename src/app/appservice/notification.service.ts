@@ -32,7 +32,7 @@ public token:string;
         this.connectionExists = false;
 
         // create hub connection  
-        this.connection = $.hubConnection("http://localhost:54042/");
+        this.connection = $.hubConnection("http://bookingserve.azurewebsites.net/");
         this.token=localStorage.getItem('id_token');
         
         
