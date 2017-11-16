@@ -56,7 +56,11 @@ import {NgxPaginationModule} from 'ngx-pagination';
 import { ManagersComponent } from './managers/managers.component';
 import {HttpUsersService} from "app/managers/users.service";
 import {FilterService} from "app/search/search.service";
-import {NotificationService} from "app/appservice/notification.service"
+import {NotificationService} from "app/appservice/notification.service";
+import { ImageuploadComponent } from './imageupload/imageupload.component';
+import { FileSelectDirective, FileDropDirective, FileUploader } from 'ng2-file-upload/ng2-file-upload';
+import {SharedModuleModule} from "app/shared-module/";
+
 
 
 const Routes=[
@@ -125,10 +129,13 @@ const Routes=[
     AccomodationCommentComponent,
     MapComponent,
     SearchComponent,
-    ManagersComponent
+    ManagersComponent,
+    ImageuploadComponent,
+    FileSelectDirective,
+    FileDropDirective
   ],
   
-  entryComponents: [AccomodationDetailsComponent,AccomodationCommentComponent,SearchComponent,RoomAddComponent,RoomEditComponent,MapComponent],
+  entryComponents: [AccomodationDetailsComponent,AccomodationCommentComponent,ImageuploadComponent,SearchComponent,RoomAddComponent,RoomEditComponent,MapComponent],
 
   imports: [
     BrowserModule,
@@ -137,7 +144,7 @@ const Routes=[
     RouterModule.forRoot(Routes),
     NguiDatetimePickerModule,
     MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule,MaterialModule,MdNativeDateModule,MdSnackBarModule,
-    BrowserAnimationsModule,NgxPaginationModule,
+    BrowserAnimationsModule,NgxPaginationModule,SharedModuleModule,
     //prilikom import-a mape prosleđujemo Google API key koji dobijamo preko google konzole
     AgmCoreModule.forRoot({apiKey: 'AIzaSyAtvp71DTpNaEw59EcmxvFMQOKRyRUiArg'})
    
